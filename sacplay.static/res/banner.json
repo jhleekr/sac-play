@@ -1,0 +1,28 @@
+[
+    {
+        "id": "banner-1",
+        "name": "SAMPLE 1",
+        "btype": "offline-perm",
+        "color": 0,
+        "atype": 3,
+        "itype": 1,
+        "ilink": "<img width=\"80%\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNSA1aC0zdi0xaDN2MXptOCA1Yy0xLjY1NCAwLTMgMS4zNDYtMyAzczEuMzQ2IDMgMyAzIDMtMS4zNDYgMy0zLTEuMzQ2LTMtMy0zem0xMS00djE1aC0yNHYtMTVoNS45M2MuNjY5IDAgMS4yOTMtLjMzNCAxLjY2NC0uODkxbDEuNDA2LTIuMTA5aDhsMS40MDYgMi4xMDljLjM3MS41NTcuOTk1Ljg5MSAxLjY2NC44OTFoMy45M3ptLTE5IDRjMC0uNTUyLS40NDctMS0xLTEtLjU1MyAwLTEgLjQ0OC0xIDFzLjQ0NyAxIDEgMWMuNTUzIDAgMS0uNDQ4IDEtMXptMTMgM2MwLTIuNzYxLTIuMjM5LTUtNS01cy01IDIuMjM5LTUgNSAyLjIzOSA1IDUgNSA1LTIuMjM5IDUtNXoiLz48L3N2Zz4=\">",
+        "text": "Description",
+        "ltext": "",
+        "daterange": [1103,1105],
+        "place": "세미나실"
+    },
+    {
+        "id": "banner-2",
+        "name": "SAMPLE 2",
+        "btype": "offline-temp",
+        "color": 4,
+        "atype": 2,
+        "itype": 2,
+        "ilink": "<img width=\"80%\" src=\"/res/icon/sample.png\">",
+        "text": "Multi-line\nDescription",
+        "ltext": "",
+        "daterange": [1101,1103],
+        "place": "대강당"
+    }
+]

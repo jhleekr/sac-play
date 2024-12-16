@@ -1,0 +1,65 @@
+#inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+    #inner {
+        width: 780px;
+    }
+}
+
+#list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div.record {
+    width: calc(100% - 20px);
+    display: grid;
+    gap: 5px 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    padding: 10px;
+}
+div.record:nth-child(odd) {
+    background-color: aliceblue;
+}
+div.record:nth-child(even) {
+    background-color: floralwhite;
+}
+div.record div:nth-child(1) {
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+}
+div.record div:nth-child(2) {
+	grid-column: 3 / 5;
+	grid-row: 1 / 2;
+}
+div.record div:nth-child(3) {
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
+}
+div.record div:nth-child(4) {
+	grid-column: 3 / 5;
+	grid-row: 2 / 3;
+    text-align: end;
+}
+div.record div:nth-child(5) {
+	grid-column: 3 / 4;
+	grid-row: 3 / 4;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #8DA4D040;
+    text-align: center;
+}
+div.record div:nth-child(6) {
+	grid-column: 4 / 5;
+	grid-row: 3 / 4;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #d08d8d40;
+    text-align: center;
+}

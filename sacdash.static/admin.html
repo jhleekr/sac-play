@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/global.css">
+    <link type="text/css" rel="stylesheet" href="/css/main.css">
+    <title>SAC Play Dashboard</title>
+    <meta property="og:image" content="https://dash.sac.today/res/banner.png">
+    <meta property="og:title" content="SAC Play Dashboard">
+    <meta property="og:description" content="SAC Play Dashboard">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div id="header">
+        <div class="mont big"><span class="bold">SAC Play</span> Dashboard</div>
+        <svg width="35px" height="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M20 7.093v-5.093h-3v2.093l3 3zm4 5.907l-12-12-12 12h3v10h7v-5h4v5h7v-10h3zm-5 8h-3v-5h-8v5h-3v-10.26l7-6.912 7 6.99v10.182z"/>
+            <rect class="bttn" x="0" y="0" width="35px" height="35px" onclick="window.location.href='/main';" />
+        </svg>
+    </div>
+    <div id="bg"></div>
+
+    <div id="outer">
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="box">
+            <div id="welcome" class="ibm sml cent">
+                필요한 메뉴를 선택해주세요.
+            </div>
+        </div>
+
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="blk">
+            <div class="ibm med">관리자 메뉴</div>
+        </div>
+
+        <div id="sell" class="box_a" onclick="window.location.href='/pending/';">
+            <div class="ibm">
+                <div class="med bold">상금 지급 승인</div>
+                <div class="sml">
+                    상금 지급 요청 건에 대하여 승인 및 거절을 할 수 있습니다.
+                </div>
+                <div class="sml bold rght2">이동하기 ></div>
+            </div>
+        </div>
+        <!--
+        <div id="rewd" class="box_a" onclick="window.location.href='/paypc/';">
+            <div class="ibm">
+                <div class="med bold">PC 모드</div>
+                <div class="sml">
+                    분리된 스캐너를 사용합니다.
+                </div>
+                <div class="sml bold rght2">이동하기 ></div>
+            </div>
+        </div>
+        -->
+
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="padt"></div>
+        <div class="rght mont med padt">SAC Play</div>
+        <div class="rght mont sml">Developed by J. H. Lee</div>
+        <div class="padt"></div>
+    </div>
+    
+    <script src="/js/cookie.js"></script>
+    <script src="/js/checkusr.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+#balance {
+    width: calc(100% - 70px);
+    height: auto;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 1rem 3rem rgba(14,17,31,.125);
+}
+
+#balance-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#quickmenu {
+    width: calc(100% - 30px);
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+#quickmenu::-webkit-scrollbar {
+    display: none;
+}
+
+#banners-outer {
+    width: 100%;
+    overflow-x: hidden;
+}
+#banners {
+    width: calc(400% - 30px);
+    position: relative;
+    align-self: flex-start;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    animation-name: slideshow;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes slideshow {
+    0% {margin-left: 15px;}
+    23% {margin-left: 15px;}
+    25% {margin-left: calc(15px - 100%);}
+    48% {margin-left: calc(15px - 100%);}
+    50% {margin-left: calc(15px - 200%);}
+    73% {margin-left: calc(15px - 200%);}
+    75% {margin-left: calc(15px - 300%);}
+    98% {margin-left: calc(15px - 300%);}
+    100% {margin-left: 15px;}
+}
+
+#bannerzone {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#auction {
+    background-image: linear-gradient(180deg, #ffffffff, #EBF4FFff 50px, #ffffffff 50px);
+    background-size: cover;
+    background-position: 0px -50px;
+}
+
+#auction2 {
+    /**
+    background-image: linear-gradient(180deg, #ffffffc0, #F8CACCc0 50px, #ffffffc0 50px),
+                        url("/res/auction.webp");
+                        **/
+    background-image: linear-gradient(180deg, #ffffffff, #EBF4FFff 50px, #ffffffff 50px);
+    background-size: cover;
+    background-position: 0px -50px;
+}
+
+#auction3 {
+    background-image: linear-gradient(180deg, #ffffffff, #EBF4FFff 50px, #ffffffff 50px);
+    background-size: cover;
+    background-position: 0px -50px;
+}
+
+#auction4 {
+    background-image: linear-gradient(180deg, #ffffffff, #EBF4FFff 50px, #ffffffff 50px);
+    background-size: cover;
+    background-position: 0px -50px;
+}
+
+#cap {
+    display: none;
+}
+
+.blk {
+    width: calc(100% - 60px);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box {
+    width: calc(100% - 70px);
+    height: auto;
+    border-radius: 20px;
+    background-color: #EBF4FF;
+    padding: 15px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.btn-outer {
+    width: 80px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: #DBEBFF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btnico {
+    width: 60px;
+}
+
+.bannergap {
+    width: 100px;
+}

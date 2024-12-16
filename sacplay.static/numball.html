@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/global.css">
+    <link type="text/css" rel="stylesheet" href="/css/gift.css">
+    <title>SAC Play</title>
+    <meta property="og:image" content="https://play.sac.today/res/banner.png">
+    <meta property="og:title" content="SAC Play">
+    <meta property="og:description" content="SAC을 더 알차고 풍성하게 즐기는 법, SAC Play!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <script src="/js/menu.js"></script>
+    <script src="/js/cookie.js"></script>
+    <script src="/js/numball.js"></script>
+    <script src="/js/checkusr.js"></script>
+    <div id="header">
+        <img id="logo" src="/res/sapw.png" height="35px">
+        <svg width="35px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/>
+            <rect class="bttn" x="0" y="0" width="35px" height="35px" onclick="openmenu();" />
+        </svg>
+    </div>
+    <div id="bg"></div>
+
+    <div id="menu-outer">
+        <div id="menu">
+            <div id="menu-header">
+                <div class="mont big">Menu</div>
+                <svg width="35px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/>
+                    <rect class="bttn" x="0" y="0" width="35px" height="35px" onclick="closemenu();" />
+                </svg>
+            </div>
+
+            <div id="menu-inner" class="pre">
+                <div class="med">Quick Link</div>
+                <div class="tl"></div>
+                <div class="sml menuitm" onclick="window.location.href='/main/';">메인 화면</div>
+                <div class="sml menuitm" onclick="window.location.href='/logout/';">로그아웃</div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+
+                <div class="med">SAC Pay</div>
+                <div class="tl"></div>
+                <div class="sml menuitm" onclick="window.location.href='/send/';">송금</div>
+                <div class="sml menuitm" onclick="window.location.href='/pay/';">결제</div>
+                <div class="sml menuitm" onclick="window.location.href='/record/';">이용 내역 조회</div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+
+                <div class="med">이벤트</div>
+                <div class="tl"></div>
+                <!--<div class="sml menuitm" onclick="window.location.href='/treasure/';">보물 찾기</div>-->
+                <div class="sml menuitm" onclick="window.location.href='/gift/';">출석 체크</div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+
+                <div class="med">기타</div>
+                <div class="tl"></div>
+                <div class="sml menuitm" onclick="window.location.href='/help/';">문의하기</div>
+                <div class="sml menuitm" onclick="window.location.href='/bugb/';">버그 바운티</div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+            </div>
+
+            <div id="menu-footer">
+                <img src="/res/sapw.png" width="30%">
+                <div class="padt"></div>
+                <div class="pre sml">2023 SAC Play, Developed by J.H.Lee. All rights reserved.</div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="outer">
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="ibm sml">
+            SAC을 더 알차고 풍성하게 즐기는 법, SAC Play!
+        </div>
+        <div class="ibm big">
+            숫자 야구 이벤트
+        </div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <img src="/res/baseball.jpg" width="80%">
+        
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="ibm med">
+            4자리 숫자를 맞추고 대박나세요!
+        </div>
+        <div class="padt"></div>
+        <div id="btn" class="ibm med btn" onclick="get();">
+            숫자야구 도전하기
+        </div>
+
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="ibm sml left">
+            * 1회 참가비용은 1000px입니다.
+        </div>
+        <div class="ibm sml left">
+            * 진행 도중 사이트를 나가실 경우 참가비용 복구가 어렵습니다.
+        </div>
+
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="rght mont med padt">SAC Play</div>
+        <div class="rght mont sml">Developed by J. H. Lee</div>
+        <div class="padt"></div>
+    </div>
+</body>
+
+</html>

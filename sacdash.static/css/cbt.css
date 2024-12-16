@@ -1,0 +1,9 @@
+div {
+    text-align: center;
+}
+@media screen and (min-width: 800px) {
+    div {
+        width: 780px;
+        text-align: start;
+    }
+}

@@ -1,0 +1,32 @@
+canvas#qr {
+    width: 70%;
+}
+
+#box {
+    width: 80%;
+}
+#timetxt1 {
+    width: 100%;
+    color: black;
+}
+#timetxt2 {
+    width: 100%;
+    color: black;
+}
+#barfront {
+    width: 80%;
+    align-self: flex-end;
+    margin-right: calc(10%);
+    height: 10px;
+    background-color: #a9d8f5;
+    margin-top: 10px;
+}
+#barback {
+    width: 80%;
+    height: 10px;
+    background-color: gray;
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    background: linear-gradient(90deg, #E7F5CA 0%, #E0BDE1 33.33%, #F8F9B2 66.67%, #A9D8F5 100%);
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/global.css">
+    <link type="text/css" rel="stylesheet" href="/css/main.css">
+    <title>SAC Play</title>
+    <meta property="og:image" content="https://play.sac.today/res/banner.png">
+    <meta property="og:title" content="SAC Play">
+    <meta property="og:description" content="SAC을 더 알차고 풍성하게 즐기는 법, SAC Play!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <script src="/js/menu.js"></script>
+    <script src="/js/cookie.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/checkusr.js"></script>
+    <div id="header">
+        <img id="logo" src="/res/sapw.png" height="35px">
+        <svg width="35px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/>
+            <rect class="bttn" x="0" y="0" width="35px" height="35px" onclick="openmenu();" />
+        </svg>
+    </div>
+    <div id="bg"></div>
+
+    <div id="menu-outer">
+        <div id="menu">
+            <div id="menu-header">
+                <div class="mont big">Menu</div>
+                <svg width="35px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/>
+                    <rect class="bttn" x="0" y="0" width="35px" height="35px" onclick="closemenu();" />
+                </svg>
+            </div>
+
+            <div id="menu-inner" class="pre">
+                <div class="med">Quick Link</div>
+                <div class="tl"></div>
+                <div class="sml menuitm" onclick="window.location.href='/main/';">메인 화면</div>
+                <div class="sml menuitm" onclick="window.location.href='/logout/';">로그아웃</div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+
+                <div class="med">SAC Pay</div>
+                <div class="tl"></div>
+                <div class="sml menuitm" onclick="window.location.href='/send/';">송금</div>
+                <div class="sml menuitm" onclick="window.location.href='/pay/';">결제</div>
+                <div class="sml menuitm" onclick="window.location.href='/record/';">이용 내역 조회</div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+
+                <div class="med">이벤트</div>
+                <div class="tl"></div>
+                <!--<div class="sml menuitm" onclick="window.location.href='/treasure/';">보물 찾기</div>-->
+                <div class="sml menuitm" onclick="window.location.href='/gift/';">출석 체크</div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+
+                <div class="med">기타</div>
+                <div class="tl"></div>
+                <div class="sml menuitm" onclick="window.location.href='/help/';">문의하기</div>
+                <div class="sml menuitm" onclick="window.location.href='/bugb/';">버그 바운티</div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+            </div>
+
+            <div id="menu-footer">
+                <img src="/res/sapw.png" width="30%">
+                <div class="padt"></div>
+                <div class="pre sml">2023 SAC Play, Developed by J.H.Lee. All rights reserved.</div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+                <div class="padt"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="outer">
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="box">
+            <div id="welcome" class="pre sml cent">
+                반가워요 님, 오늘은 SAC 1일차 입니다.
+            </div>
+        </div>
+
+        <div id="balance" class="pre">
+            <div id="account" class="sml">&nbsp;&nbsp;SAC Pay 0000-0000</div>
+            <div class="padt"></div>
+            <div class="padt"></div>
+            <div id="balances" class="cent big">0px</div>
+            <div class="padt"></div>
+            <div class="padt"></div>
+            <div id="balance-menu">
+                <div class="sml" onclick="window.location.href='/send/';">송금</div>
+                <div class="sml">|</div>
+                <div class="sml" onclick="window.location.href='/pay/';">결제</div>
+                <div class="sml">|</div>
+                <div class="sml" onclick="window.location.href='/record/';">내역</div>
+            </div>
+        </div>
+
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="blk">
+            <div class="pre med">Quick Menu</div>
+        </div>
+
+        <div id="quickmenu">
+            <!--
+            <div class="btn-outer">
+                <div class="btn" style="background-color: #d5b8d9;">
+                    <svg class="btnico" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-12.5 15.5h-4v-4h4zm1.5-4h4v4h-4zm9.5 0v4h-4v-4zm-15-5.5h4v4h-4zm5.5 0h4v4h-4zm5.5 0h4v4h-4zm-11-5.5h4v4h-4zm5.5 0h4v4h-4zm5.5 0h4v4h-4z" fill-rule="nonzero"/></svg>
+                </div>
+                <div class="pre sml">
+                    스탬프 빙고
+                </div>
+            </div>
+            -->
+            <div class="btn-outer" onclick="window.location.href='https://treasure-sac.netlify.app/';">
+                <div class="btn" style="background-color: #d5b8d9;">
+                    <svg class="btnico" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m3.514 6.636c-.317.179-.514.519-.514.887v8.95c0 .37.197.708.514.887 1.597.901 6.456 3.639 8.005 4.512.152.085.319.128.487.128.164 0 .328-.041.477-.123 1.549-.855 6.39-3.523 7.994-4.408.323-.177.523-.519.523-.891v-9.055c0-.368-.197-.708-.515-.887-1.595-.899-6.444-3.632-7.999-4.508-.151-.085-.319-.128-.486-.128-.168 0-.335.043-.486.128-1.555.876-6.405 3.609-8 4.508zm15.986 2.115v7.525l-6.75 3.722v-7.578zm-14.264-1.344 6.764-3.813 6.801 3.834-6.801 3.716z" fill-rule="nonzero"/></svg>
+                </div>
+                <div class="pre sml">
+                    보물찾기
+                </div>
+            </div>
+            <div class="btn-outer" onclick="window.location.href='/gift/';">
+                <div class="btn" style="background-color: #f8f9b2;">
+                    <svg class="btnico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12.194v9.806h-20v-20h18.272l-1.951 2h-14.321v16h16v-5.768l2-2.038zm.904-10.027l-9.404 9.639-4.405-4.176-3.095 3.097 7.5 7.273 12.5-12.737-3.096-3.096z"/></svg>
+                </div>
+                <div class="pre sml">
+                    출석 체크
+                </div>
+            </div>
+            <div class="btn-outer" onclick="window.location.href='/numball/';">
+                <div class="btn" style="background-color: #a9d8f5;">
+                    <svg class="btnico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.961 19.169c-.233-.422-.443-.844-.636-1.265l.775-.285-.346-.938-.817.3c-.205-.531-.378-1.063-.516-1.595l.893-.181-.2-.98-.906.183c-.115-.635-.18-1.271-.2-1.908h.992v-1h-.985c.028-.634.102-1.269.223-1.906l.893.181.199-.98-.871-.177c.14-.527.31-1.056.513-1.587l.782.288.346-.938-.743-.273c.188-.419.393-.839.621-1.261 1.862 1.816 3.022 4.349 3.022 7.153 0 2.813-1.167 5.351-3.039 7.169m-12.33 1.257c.35-.609.65-1.219.922-1.831l1.102.405.345-.938-1.064-.392c.238-.627.442-1.256.6-1.887l1.071.217.199-.98-1.064-.216c.14-.766.22-1.534.241-2.304h1.017v-1h-1.023c-.03-.766-.119-1.533-.266-2.302l1.078-.218-.199-.98-1.093.222c-.16-.626-.358-1.252-.596-1.879l1.099-.404-.345-.939-1.135.418c-.268-.611-.564-1.222-.906-1.833 1.556-.999 3.402-1.585 5.386-1.585s3.83.586 5.386 1.585c-.341.611-.638 1.222-.905 1.833l-1.136-.418-.345.939 1.099.404c-.238.627-.436 1.253-.595 1.879l-1.094-.222-.199.98 1.077.218c-.146.769-.234 1.536-.265 2.302h-1.023v1h1.017c.021.77.1 1.538.241 2.304l-1.064.216.199.98 1.071-.217c.158.631.362 1.26.601 1.887l-1.065.392.345.938 1.102-.405c.272.612.573 1.222.922 1.831-1.553.991-3.391 1.574-5.369 1.574-1.977 0-3.816-.583-5.369-1.574m-4.631-8.426c0-2.804 1.161-5.337 3.023-7.153.227.421.432.842.62 1.261l-.742.273.345.938.783-.288c.203.531.373 1.06.512 1.587l-.871.177.199.98.893-.181c.121.637.196 1.272.224 1.906h-.986v1h.993c-.021.637-.086 1.273-.201 1.908l-.906-.183-.199.98.892.181c-.137.532-.311 1.064-.515 1.595l-.818-.3-.345.938.775.285c-.193.422-.403.843-.636 1.265-1.872-1.817-3.04-4.356-3.04-7.169m10-12c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12"/></svg>
+                </div>
+                <div class="pre sml">
+                    숫자야구
+                </div>
+            </div>
+            <div class="btn-outer" onclick="window.location.href='/help/';">
+                <div class="btn" style="background-color: #d5b8d9;">
+                    <svg class="btnico" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.776 18.689 7.012-7.012c.133-.133.217-.329.217-.532 0-.179-.065-.363-.218-.515l-2.423-2.415c-.144-.143-.333-.215-.522-.215s-.378.072-.523.215l-7.027 6.996c-.442 1.371-1.158 3.586-1.265 3.952-.125.433.199.834.573.834.41 0 .696-.099 4.176-1.308zm-2.258-2.392 1.17 1.171c-.704.232-1.275.418-1.729.566zm.968-1.154 5.356-5.331 1.347 1.342-5.346 5.347zm-4.486-1.393c0-.402-.356-.75-.75-.75-2.561 0-2.939 0-5.5 0-.394 0-.75.348-.75.75s.356.75.75.75h5.5c.394 0 .75-.348.75-.75zm5-3c0-.402-.356-.75-.75-.75-2.561 0-7.939 0-10.5 0-.394 0-.75.348-.75.75s.356.75.75.75h10.5c.394 0 .75-.348.75-.75zm0-3c0-.402-.356-.75-.75-.75-2.561 0-7.939 0-10.5 0-.394 0-.75.348-.75.75s.356.75.75.75h10.5c.394 0 .75-.348.75-.75zm0-3c0-.402-.356-.75-.75-.75-2.561 0-7.939 0-10.5 0-.394 0-.75.348-.75.75s.356.75.75.75h10.5c.394 0 .75-.348.75-.75z" fill-rule="nonzero"/></svg>
+                </div>
+                <div class="pre sml">
+                    문의하기
+                </div>
+            </div>
+            <div class="btn-outer" onclick="window.location.href='/bugb/';">
+                <div class="btn" style="background-color: #f2acac;">
+                    <svg class="btnico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.074 1.408c0-.778.641-1.408 1.431-1.408.942 0 1.626.883 1.38 1.776-.093.336-.042.695.138.995.401.664 1.084 1.073 1.977 1.078.88-.004 1.572-.408 1.977-1.078.181-.299.231-.658.138-.995-.246-.892.436-1.776 1.38-1.776.79 0 1.431.63 1.431 1.408 0 .675-.482 1.234-1.118 1.375-.322.071-.6.269-.769.548-.613 1.017.193 1.917.93 2.823-1.21.562-2.524.846-3.969.846-1.468 0-2.771-.277-3.975-.84.748-.92 1.555-1.803.935-2.83-.168-.279-.446-.477-.768-.548-.636-.14-1.118-.699-1.118-1.374zm13.485 14.044h2.387c.583 0 1.054-.464 1.054-1.037s-.472-1.037-1.054-1.037h-2.402c-.575 0-1.137-.393-1.227-1.052-.092-.677.286-1.147.765-1.333l2.231-.866c.541-.21.807-.813.594-1.346-.214-.533-.826-.795-1.367-.584l-2.294.891c-.329.127-.734.036-.926-.401-.185-.423-.396-.816-.62-1.188-1.714.991-3.62 1.501-5.7 1.501-2.113 0-3.995-.498-5.703-1.496-.217.359-.421.738-.601 1.146-.227.514-.646.552-.941.437l-2.295-.89c-.542-.21-1.153.051-1.367.584-.213.533.053 1.136.594 1.346l2.231.866c.496.192.854.694.773 1.274-.106.758-.683 1.111-1.235 1.111h-2.402c-.582 0-1.054.464-1.054 1.037s.472 1.037 1.054 1.037h2.387c.573 0 1.159.372 1.265 1.057.112.728-.228 1.229-.751 1.462l-2.42 1.078c-.53.236-.766.851-.526 1.373s.865.753 1.395.518l2.561-1.14c.307-.137.688-.106.901.259 1.043 1.795 3.143 3.608 6.134 3.941 2.933-.327 5.008-2.076 6.073-3.837.261-.432.628-.514.963-.364l2.561 1.14c.529.236 1.154.005 1.395-.518.24-.522.004-1.137-.526-1.373l-2.42-1.078c-.495-.221-.867-.738-.763-1.383.128-.803.717-1.135 1.276-1.135z"/></svg>
+                </div>
+                <div class="pre sml">
+                    버그 바운티
+                </div>
+            </div>
+        </div>
+        
+        <div class="padt"></div>
+        <div class="padt"></div>
+        
+        <div class="blk">
+            <div class="pre med">진행중인 이벤트</div>
+        </div>
+
+        <div id="banners-outer">
+            <div id="banners">
+                <div id="auction" class="box" onclick="window.location.href='/gift/';">
+                    <div class="ibm">
+                        <div class="med bold">출석체크</div>
+                        <div class="sml">
+                            매일 선물상자를 열고 보상으로 SAC머니 받아가세요!
+                        </div>
+                        <div class="sml bold rght">출석체크 하러가기 ></div>
+                    </div>
+                </div>
+                <div class="bannergap"></div>
+                <div id="auction2" class="box" onclick="window.location.href='/numball/';">
+                    <div class="ibm">
+                        <div class="med bold">숫자 야구</div>
+                        <div class="sml">
+                            숫자 야구에서 최대 18배의 홈런 행운을 노려보세요!
+                        </div>
+                        <div class="sml bold rght">숫자야구 참여하러 가기 ></div>
+                    </div>
+                </div>
+                <!--
+                <div id="auction2" class="box">
+                    <div class="ibm">
+                        <div class="med bold">SAC 경매장2</div>
+                        <div class="sml">
+                            너무 많은 SAC머니가 걱정이라고요? 여기에서 누가 가장 부자인지 겨뤄보자구요!
+                        </div>
+                        <div class="sml bold rght">경매장 입장하기 ></div>
+                    </div>
+                </div>
+                -->
+                <div class="bannergap"></div>
+                <div id="auction3" class="box" onclick="window.location.href='https://treasure-sac.netlify.app/';">
+                    <div class="ibm">
+                        <div class="med bold">보물 찾기</div>
+                        <div class="sml">
+                            홍보팀 보물찾기에 참여해보세요!!
+                        </div>
+                        <div class="sml bold rght">보물 찾기 하러가기 ></div>
+                    </div>
+                </div>
+                <div class="bannergap"></div>
+                <div id="auction4" class="box" onclick="window.location.href='/gift/';">
+                    <div class="ibm">
+                        <div class="med bold">출석체크</div>
+                        <div class="sml">
+                            매일 선물상자를 열고 보상으로 SAC머니 받아가세요!
+                        </div>
+                        <div class="sml bold rght">출석체크 하러가기 ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="blk">
+            <div class="pre med">즐길거리 추천, 이런건 어때요?</div>
+        </div>
+
+        <div id="bannerzone"></div>
+
+        <div class="padt"></div>
+        <div class="padt"></div>
+
+        <div class="blk">
+            <div class="pre med">About SAC Play</div>
+        </div>
+
+        <div class="box twoi" style="background-color: #feeaff; justify-items: center;">
+            <img width="120%" src="/res/sap.png">
+            <div class="ibm">
+                <div class="sml">
+                    SAC Play는 SAC을 재밌게 즐길 수 있도록 개발된 시스템입니다.
+                    작년 SAC에서 선보였던 SAC Pay 시스템을 개선하여 더 편리한 결제가 가능하며, Pay 시스템뿐만 아니라 다양한 이벤트와 행사 안내 기능도 포함되어 있습니다.
+                    SAC Play와 함께 2023 SAC을 더욱 더 재미있게 즐겨보세요!
+                </div>
+            </div>
+        </div>
+
+        <div class="padt"></div>
+        <div class="rght mont med padt">SAC Play</div>
+        <div class="rght mont sml">Developed by J. H. Lee</div>
+        <div class="padt"></div>
+    </div>
+</body>
+
+</html>

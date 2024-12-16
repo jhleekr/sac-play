@@ -1,0 +1,12 @@
+[Unit]
+Description=SAC Play Service
+
+[Service]
+ExecStart=/var/www/sacplay/service/run.sh
+WorkingDirectory=/var/www/sacplay
+
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

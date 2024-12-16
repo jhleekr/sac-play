@@ -1,0 +1,64 @@
+input {
+    width: calc(100% - 120px);
+    height: 40px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+}
+div[class~=left] {
+    padding-left: 50px;
+    width: calc(100% - 100px);
+}
+#btn1 {
+    width: calc(100% - 100px);
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: #DBEBFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-self: center;
+}
+#btn2 {
+    width: calc(90%);
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 2px solid #DBEBFF;
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-self: flex-start;
+}
+#btn3 {
+    width: calc(90%);
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: #DBEBFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-self: flex-end;
+}
+.wdth {
+    width: calc(100% - 120px);
+}
+
+#outer-l2 {
+    background-color: #f0f5fc;
+    border-radius: 30px 30px 0px 0px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    top: -584px;
+    margin-bottom: -584px;
+}

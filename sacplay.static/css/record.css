@@ -1,0 +1,48 @@
+#seekbar {
+    width: 100%;
+    background-color: ghostwhite;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#records {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nl {
+    width: 100%;
+    border-top: 0.5px solid #8DA4D0;
+}
+
+.record {
+    width: calc(100% - 100px);
+    display: grid;
+    gap: 5px 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    margin: 10px;
+}
+.record-date {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+.record-cmnt {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+.record-amnt {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+    text-align: end;
+}
+.record-apvd {
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+    text-align: end;
+}

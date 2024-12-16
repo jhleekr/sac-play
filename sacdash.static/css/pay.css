@@ -1,0 +1,38 @@
+#step1, #step2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.box {
+    width: calc(100% - 70px);
+    height: auto;
+    border-radius: 20px;
+    background-color: #8DA4D040;
+    padding: 15px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+input {
+    width: calc(100% - 120px);
+    height: 40px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+}
+div[class~=left] {
+    padding-left: 50px;
+    width: calc(100% - 100px);
+}
+#btn1, #btn2 {
+    width: calc(100% - 100px);
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ff9192;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-self: center;
+}
